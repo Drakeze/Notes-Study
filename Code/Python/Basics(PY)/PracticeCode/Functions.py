@@ -37,6 +37,33 @@ if __name__ == "__main__":
         print(f"An error occurred: {e}")
 '''
 # This is a Password validator
+# Helper functions for password validation
+def has_uppercase(password):
+    for char in password:
+        if char.isupper():
+            return True
+    return False
+
+def has_lowercase(password):
+    for char in password:
+        if char.islower():
+            return True
+    return False
+
+def has_numbers(password):
+    for char in password:
+        if char.isdigit():
+            return True
+    return False
+
+def has_special_chars(password):
+    special_chars = "!@#$%^&*()_+-=[]{}|;:,.<>?"
+    for char in password:
+        if char in special_chars:
+            return True
+    return False
+
+# Main password validator function
 def __Pass__():
     password = input("Enter your password: ")
     
@@ -46,7 +73,7 @@ def __Pass__():
     if len(password) > 32:
         return "Password is too long"
         
-    # Character validations (placeholders for future implementation)
+    # Character validations
     if not has_uppercase(password):
         return "Password must contain at least one uppercase letter"
     if not has_lowercase(password):
@@ -55,3 +82,11 @@ def __Pass__():
         return "Password must contain at least one digit"
     if not has_special_chars(password):
         return "Password must contain at least one special character"
+    
+    # If all checks pass
+    return "Password is valid!"
+
+# Test the password validator
+if __name__ == "__main__":
+    result = __Pass__()
+    print(result)
