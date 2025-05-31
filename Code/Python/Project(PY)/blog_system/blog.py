@@ -15,7 +15,7 @@
 •  Add docstrings for better documentation'''
 class BlogPost:
     # This is where the sign in and sign up functionality would be implemented.
-    def __init__(author,self, title, content):
+    def __init__(self,author, title, content):
         self.author = author
         self.title = title
         self.content = content
