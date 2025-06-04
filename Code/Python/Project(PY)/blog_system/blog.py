@@ -1,5 +1,7 @@
 #This is a practice file for the blog system.
 # It contains a simple class to represent a blog post.
+#
+from datetime import datetime
 '''Add more attributes like:
 ◦  author
 ◦  date_created
@@ -24,8 +26,11 @@ class BlogPost:
         self.tags = []
 
 #The titles and content are required parameters for creating a blog post.
-    def set_date_created(self, date):
+    def set_date_created(self, date= None):
+        if date is None:
+            date = datetime.now()
         self.date_created = date
+# Change of format for date_created for it to self add time when user made post 
     def set_post_id(self, post_id):
         self.post_id = post_id
     def add_tag(self, tag):
