@@ -1,0 +1,20 @@
+[package]
+name = "rust-calculator"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "A simple command-line calculator written in Rust"
+license = "MIT"
+
+[dependencies]
+# No external dependencies for this simple calculator
+
+[[bin]]
+name = "calculator"
+path = "main.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"

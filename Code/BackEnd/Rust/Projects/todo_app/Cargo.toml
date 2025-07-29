@@ -1,0 +1,21 @@
+[package]
+name = "rust-todo-app"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "A command-line todo application written in Rust"
+license = "MIT"
+
+[dependencies]
+# For real datetime handling, uncomment the line below:
+# chrono = { version = "0.4", features = ["serde"] }
+
+[[bin]]
+name = "todo"
+path = "main.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
