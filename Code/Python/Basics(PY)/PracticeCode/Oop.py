@@ -13,13 +13,11 @@ def __init__(self, account_number, initial_balance=0, account_type="Active"):
     BankAccount.accounts[account_number] = self
 # This is for account information
 def __str__(self):
-    account_info {
-        f"Account Number: {self.account_number}",
-        f"Account Type: {self.account_type}",
-        f"Balance: ${self.balance}"
-        f"Status: {'Active' if self.account_number in BankAccount.accounts else 'Inactive'}"
-        else:
-        "closed"
+    account_info = {
+        "Account Number": self.account_number,
+        "Account Type": self.account_type,
+        "Balance": f"${self.balance}",
+        "Status": "Active" if self.account_number in BankAccount.accounts else "Inactive"
     }
     return str (account_info)
 #this is for changing account type active or inactive
