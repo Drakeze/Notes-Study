@@ -33,7 +33,7 @@
 </p>
 
 - 💼 Portfolio / Startup: [SorenLab.com](https://sorenlab.com)  
-- ☕ Support me: [Patreon](https://www.patreon.com/YOUR-PATREON) | [Ko-fi](https://ko-fi.com/YOUR-KOFI)  
+- ☕ Support me: [Patreon](https://www.patreon.com/cw/SorenTech) | [Ko-fi](https://ko-fi.com/sorentech)  
 
 ---
 
